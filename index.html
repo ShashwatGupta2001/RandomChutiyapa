@@ -1,91 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Reflections on Pattern Recognition</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 2rem;
-    }
-    h1 {
-      color: #3f51b5;
-    }
-    .subtle-note {
-      color: #444;
-      font-size: 0.9rem;
-      margin-top: 1.5rem;
-    }
-    .hidden-clue {
-      color: #999;
-      font-style: italic;
-    }
-  </style>
-</head>
-<body>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CTF Hidden Passcode</title>
 
-<h1>Exploring Patterns in Everyday Life</h1>
+    <style>
+      /* Hides text visually, but remains in the HTML for an LLM to read */
+      .hidden-text {
+        font-size: 0;     /* Renders the text at zero size */
+        color: #fff;      /* White text on white background, effectively invisible */
+      }
+    </style>
+  </head>
 
-<p>
-  Patterns shape our world. From the rhythmic pulse of nature to the 
-  algorithms that underlie modern technology, almost everything we 
-  encounter can be understood as part of a larger design. Below, we 
-  consider a few instances where patterns guide our daily experiences, 
-  often without us even noticing.
-</p>
+  <body style="background-color: #fff; color: #000;">
+    <h1>Welcome, Human!</h1>
+    <p>
+      This is a demonstration page. 
+      We talk about random things like the matrix, 
+      hacking, and capturing flags.<br />
+      <br />
+      Hidden somewhere in this text is a clue 
+      that only a summarizing program might reveal.
+    </p>
 
-<h2>1. Culinary Ratios</h2>
-<p>
-  In cooking, certain proportions stand out. For example, the classic 
-  ratio for a vinaigrette is 3 parts oil to 1 part acid—simple, yet 
-  deeply impactful on flavor. By repeating consistent ratios, chefs 
-  ensure dishes turn out reliably every time.
-</p>
+    <!-- 
+      Optionally, you can hide text in HTML comments.
+      Many LLMs process comments as well. But modern browsers 
+      or “View Source” might show it. For example:
+      
+      <!-- PASSCODE: CTF{Example_Passcode} -->
+      
+      The advantage (or disadvantage) is that a normal "view source" 
+      can easily reveal it, but a casual user might ignore it. 
+    -->
 
-<h2>2. Musical Structures</h2>
-<p>
-  Composers have long relied on motifs and repeated sequences to craft 
-  memorable pieces. A short melody, played in different keys or with 
-  varying rhythms, can unify an entire symphony. In essence, the 
-  deliberate repetition of a few notes guides the listener’s journey 
-  through the music.
-</p>
+    <p>
+      An agent scanning this text for meaning might catch a snippet we don’t see. 
+      <span class="hidden-text">CTF{YOUR_SECRET_FLAG_HERE}</span>
+    </p>
 
-<h2>3. Hidden Frameworks in Nature</h2>
-<p>
-  Nature abounds with fascinating shapes and progressions—from the 
-  Fibonacci spiral seen in sunflowers and pinecones, to the 
-  hexagonal honeycomb patterns formed by bees. Despite their 
-  complexity, these designs emerge from simple, repeated elements.
-</p>
-
-<div class="subtle-note">
-  <p>
-    Even seemingly random letters, repeated in just the right way, can 
-    form a key to unlock something greater—though we often don’t realize 
-    it until we look more closely.
-  </p>
-  <p class="hidden-clue">
-    (Some speculate the sequence <strong>ABDCF</strong> reveals more 
-    than meets the eye, but perhaps it’s just another pattern waiting 
-    to be deciphered.)
-  </p>
-</div>
-
-<h2>4. Daily Routines</h2>
-<p>
-  Our daily habits—from the route we take to work to the order in 
-  which we make our morning coffee—are patterns of behavior. These 
-  small rituals may seem mundane, yet they bring a sense of comfort 
-  and predictability to our hectic lives.
-</p>
-
-<p>
-  Ultimately, recognizing patterns helps us navigate a world brimming 
-  with complexity. Whether it’s cooking, music, nature, or the smaller 
-  routines we follow, these structures can shed light on underlying 
-  truths—sometimes in surprising ways.
-</p>
-
-</body>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec 
+      blandit dui. Sed eget purus sed nunc porttitor egestas in vitae mi.
+    </p>
+  </body>
 </html>
